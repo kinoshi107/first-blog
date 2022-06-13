@@ -1,5 +1,9 @@
 /*Mobile 1st*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url(./box-blog.css);
+
+
 .container{
     width:90%;
     display:grid;
@@ -11,8 +15,7 @@
     "sd"
     "m1"
     "m2"
-    "ft"; 
-    background: #e1daa7
+    "ft";
 }
 
 
@@ -46,12 +49,16 @@
 .cur{
     display: none;
     grid-area:cur;
+    padding:7px;
 }
 
 .ft{
     display: flex;
     grid-area:ft;
-    justify-content:center;
+    flex-flow: row;
+    justify-content:space-evenly;
+    align-items:center
+    
 }
 
 img{
@@ -61,7 +68,13 @@ img{
 p{
     padding:5px
 }
+body{
+    background-color: #e1daa7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
 
+/* Medium Screens*/
 @media only screen and (min-width:540px) and (max-width:1000px){
     .container{
         width:90%;
@@ -75,14 +88,14 @@ p{
         "m1 m1 m2 m2"
         "cur cur cur cur"
         "ft ft ft ft"; 
-        background: #e1daa7
+    
     }
     .cur{
         display:flex;
         flex-flow: row wrap;
     }
 }
-
+/* large Screens*/
 @media only screen and (min-width:1001px){
     .container{
         width:90%;
@@ -96,7 +109,7 @@ p{
         "sd cur cur cur cur cur"
         "sd cur cur cur cur cur"
         "ft ft ft ft ft ft"; 
-        background: #e1daa7
+    
     }
     .sd{
         flex-flow: column wrap;

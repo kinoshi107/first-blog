@@ -1,14 +1,24 @@
 /* Mobile 1st */
-change
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+body{
+    background: rgb(30, 22, 22);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    
+}
 .bcontainer{
-    Display:grid;
-    background: yellow;
+    display:grid;
+    justify-items: right;
     grid-template-columns:1fr;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-gap: 10px;
     grid-template-areas:
     "hd"
     "sd"
     "art"
-    "ft" ;
+    "ft";
 }
 
 h2 {
@@ -17,12 +27,18 @@ h2 {
 
 .art{
     display:flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap ;
+    
+
+    
 }
 
 .box{
     border: 1px solid orange;
-    background: rgb(188, 130, 243)
+    background: rgb(188, 130, 243);
+    border-radius: 10px;
+    padding: 5px;
+
 
 }
 .head{
@@ -42,10 +58,40 @@ h2 {
     grid-area:ft;
     display:flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content:space-evenly;
+    width: 100%;
 }
 
 img{ 
     float:right;
 }
+/* Medium Screens*/
+@media only screen and (min-width:540px) and (max-width:1000px){
+        .bcontainer{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 10vh 80vh 5vh;
+        grid-gap: 10px;
+        grid-template-areas:
+        "hd  hd  hd  hd"
+        "art art art art"
+        "art art art art"
+        "ft  ft  ft  ft";
+    }
 
+}
+
+/* Large Screens*/
+@media only screen and (min-width:1001px){
+    .bcontainer{
+        display:grid;
+        justify-items: right;
+        grid-template-columns:1fr;
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-gap: 10px;
+        grid-template-areas:
+        "hd hd hd hd hd hd "
+        "art art art art art art"
+        "ft ft ft ft ft ft";
+    }
+}
