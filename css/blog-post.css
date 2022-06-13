@@ -1,0 +1,51 @@
+/* Mobile 1st */
+
+.bcontainer{
+    Display:grid;
+    background: yellow;
+    grid-template-columns:1fr;
+    grid-template-areas:
+    "hd"
+    "sd"
+    "art"
+    "ft" ;
+}
+
+h2 {
+    text-align:right;
+}
+
+.art{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.box{
+    border: 1px solid orange;
+    background: rgb(188, 130, 243)
+
+}
+.head{
+    grid-area:hd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sd{
+    display:flex;
+    grid-area:sd;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+.ft{
+    grid-area:ft;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+img{ 
+    float:right;
+}
+

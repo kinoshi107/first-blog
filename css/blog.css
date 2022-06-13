@@ -1,0 +1,108 @@
+/*Mobile 1st*/
+@import url(./box-blog.css);
+.container{
+    width:90%;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat (2,1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "hd"
+    "sd"
+    "m1"
+    "m2"
+    "ft"; 
+    background: #e1daa7
+}
+
+
+.head{
+    grid-area:hd;
+}
+
+.sd{
+    grid-area:sd;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding: 5px;
+}
+
+.m1{
+    grid-area:m1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.m2{
+    grid-area:m2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.cur{
+    display: none;
+    grid-area:cur;
+}
+
+.ft{
+    display: flex;
+    grid-area:ft;
+    justify-content:center;
+}
+
+img{
+    float:right;
+}
+
+p{
+    padding:5px
+}
+
+@media only screen and (min-width:540px) and (max-width:1000px){
+    .container{
+        width:90%;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:repeat (5,1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "hd hd hd hd"
+        "sd sd sd sd"
+        "m1 m1 m2 m2"
+        "cur cur cur cur"
+        "ft ft ft ft"; 
+        background: #e1daa7
+    }
+    .cur{
+        display:flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media only screen and (min-width:1001px){
+    .container{
+        width:90%;
+        display:grid;
+        grid-template-columns:repeat (6,1fr);
+        grid-template-rows:repeat (5,1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "hd hd hd hd hd hd"
+        "sd m1 m1 . m2 m2"
+        "sd cur cur cur cur cur"
+        "sd cur cur cur cur cur"
+        "ft ft ft ft ft ft"; 
+        background: #e1daa7
+    }
+    .sd{
+        flex-flow: column wrap;
+    }
+    .cur{
+        display:flex;
+        flex-flow: row wrap;
+    }
+}
