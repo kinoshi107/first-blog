@@ -1,16 +1,15 @@
 /*Mobile 1st*/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url(./box-blog.css);
 
-
-.container{
-    width:90%;
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:repeat (2,1fr);
-    grid-gap: 10px;
-    grid-template-areas:
+.container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat (2, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
     "hd"
     "sd"
     "m1"
@@ -18,104 +17,100 @@
     "ft";
 }
 
-
-.head{
-    grid-area:hd;
+.head {
+  grid-area: hd;
 }
 
-.sd{
-    grid-area:sd;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    padding: 5px;
+.sd {
+  grid-area: sd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
 }
 
-.m1{
-    grid-area:m1;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:center;
+.m1 {
+  grid-area: m1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.m2{
-    grid-area:m2;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:center;
+.m2 {
+  grid-area: m2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.cur{
-    display: none;
-    grid-area:cur;
-    padding:7px;
+.cur {
+  display: none;
+  grid-area: cur;
+  padding: 7px;
 }
 
-.ft{
-    display: flex;
-    grid-area:ft;
-    flex-flow: row;
-    justify-content:space-evenly;
-    align-items:center
-    
+.ft {
+  display: flex;
+  grid-area: ft;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-img{
-    float:right;
+img {
+  float: right;
 }
 
-p{
-    padding:5px
+p {
+  padding: 5px;
 }
-body{
-    background-color: #e1daa7;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+body {
+  background-color: #e1daa7;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 /* Medium Screens*/
-@media only screen and (min-width:540px) and (max-width:1000px){
-    .container{
-        width:90%;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:repeat (5,1fr);
-        grid-gap: 10px;
-        grid-template-areas:
-        "hd hd hd hd"
-        "sd sd sd sd"
-        "m1 m1 m2 m2"
-        "cur cur cur cur"
-        "ft ft ft ft"; 
-    
-    }
-    .cur{
-        display:flex;
-        flex-flow: row wrap;
-    }
+@media only screen and (min-width: 540px) and (max-width: 1000px) {
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "hd hd hd hd"
+      "sd sd sd sd"
+      "m1 m1 m2 m2"
+      "cur cur cur cur"
+      "ft ft ft ft";
+  }
+  .cur {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
 /* large Screens*/
-@media only screen and (min-width:1001px){
-    .container{
-        width:90%;
-        display:grid;
-        grid-template-columns:repeat (6,1fr);
-        grid-template-rows:repeat (5,1fr);
-        grid-gap: 10px;
-        grid-template-areas:
-        "hd hd hd hd hd hd"
-        "sd m1 m1 . m2 m2"
-        "sd cur cur cur cur cur"
-        "sd cur cur cur cur cur"
-        "ft ft ft ft ft ft"; 
-    
-    }
-    .sd{
-        flex-flow: column wrap;
-    }
-    .cur{
-        display:flex;
-        flex-flow: row wrap;
-    }
+@media only screen and (min-width: 1001px) {
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
+    grid-template-rows: repeat (5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "sd m1 m1 . m2 m2"
+      "sd cur cur cur cur cur"
+      "sd cur cur cur cur cur"
+      "ft ft ft ft ft ft";
+  }
+  .sd {
+    flex-flow: column wrap;
+  }
+  .cur {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }

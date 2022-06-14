@@ -1,128 +1,115 @@
 /* Mobile 1st */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
 }
-.bcontainer{
-    display:grid;
-    width: auto;
-    grid-template-columns:1fr;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-gap: 10px;
-    grid-template-areas:
+.bcontainer {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-gap: 10px;
+  grid-template-areas:
     "hd"
     "car"
-    "ft" ;
-    
+    "ft";
 }
 
-
-.box{
-    border: 2px solid orange;
-    background: rgb(188, 130, 243);
-    border-radius:30px
-
-
+.box {
+  border: 2px solid orange;
+  background: rgb(188, 130, 243);
+  border-radius: 30px;
 }
-.cardbox{
-    grid-area:car;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border: 2px solid orange;
-    background: rgb(188, 130, 243);
-    border-radius:30px
-   
-
+.cardbox {
+  grid-area: car;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid orange;
+  background: rgb(188, 130, 243);
+  border-radius: 30px;
 }
-.head{
-    grid-area:hd;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.head {
+  grid-area: hd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.sd{
-    display:flex;
-    grid-area:sd;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
+.sd {
+  display: flex;
+  grid-area: sd;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-.ft{
-    grid-area:ft;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    align-items: center;
+.ft {
+  grid-area: ft;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.card{
-    width: 50%;
-    height: 70%;
-    text-align:center;
-    background-color: rgb(220, 187, 143);
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content:flex-start;
-    font-weight: bold;
-    
-
-    
+.card {
+  width: 50%;
+  height: 70%;
+  text-align: center;
+  background-color: rgb(220, 187, 143);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  font-weight: bold;
 }
 
-li{
-    text-align: left;
-    list-style-type: lower-roman;
+li {
+  text-align: left;
+  list-style-type: lower-roman;
 }
 
-.button{
-    background-color: tomato;
-    font-size: 24px;
-    border-radius: 12px;
-    padding:5px;
-    border: 2px solid black;
-    text-decoration:none;
-    color:black;
-    font-weight: bold;
-
-
+.button {
+  background-color: tomato;
+  font-size: 24px;
+  border-radius: 12px;
+  padding: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 /* Medium Screens*/
-@media only screen and (min-width:540px) and (max-width:1000px){
-    .container{
-        width:90%;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:repeat (5,1fr);
-        grid-gap: 10px;
-        grid-template-areas:
-        "hd hd hd hd"
-        "car car car car"
-        "ft ft ft ft"; 
-    }
-    
+@media only screen and (min-width: 540px) and (max-width: 1000px) {
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "hd hd hd hd"
+      "car car car car"
+      "ft ft ft ft";
+  }
 }
 /* large Screens*/
-@media only screen and (min-width:1001px){
-    .container{
-        width:90%;
-        display:grid;
-        grid-template-columns:repeat (6,1fr);
-        grid-template-rows:repeat (5,1fr);
-        grid-gap: 10px;
-        grid-template-areas:
-        "hd hd hd hd hd hd"
-        "car car . .  car car"
-        "ft ft ft ft ft ft"; 
-    
-    }
-    .card{
-        flex-flow: row wrap;
-        align-items: baseline;
-        align-content:center;
-}
+@media only screen and (min-width: 1001px) {
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
+    grid-template-rows: repeat (5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "car car . .  car car"
+      "ft ft ft ft ft ft";
+  }
+  .card {
+    flex-flow: row wrap;
+    align-items: baseline;
+    align-content: center;
+  }
 }
